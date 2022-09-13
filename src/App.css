@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.App .Video-Grid {
+  display: grid;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.App .Video-Grid video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
